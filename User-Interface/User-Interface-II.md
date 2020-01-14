@@ -1,4 +1,17 @@
 # User Interface II
+*Box Model*,
+*Positioning*,
+*CSS Reset*
+
+## Box Model
+1. Margin
+	* The area between other elements and this element
+2. Border
+	* A border that we can style around the padding and content of a box
+3. Padding
+	* The space between the content and the border
+4. Content
+	* This is where text and images are rendered
 
 ## Positioning
 

@@ -96,3 +96,13 @@ mode arguments
 - r = read (default)
 - a = append
 - r+ = read and write
+
+### Classes
+
+`Python Doc's`
+
+Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.
+
+- can have veirtual members
+- can defingn oporators for the class
+- Objects have individuality, and multiple names (in multiple scopes) can be bound to the same object

@@ -54,3 +54,9 @@ Only once array problem - first pass solution
 Only once array problem - second pass solution
 
 **https://youtu.be/Fy8b5YAYzw4**
+
+## Lecture
+
+**Runtime Complexity** - A measure of the efficiency of an algorithm based on the number of operations that are performed in relation to input
+
+**Space Complexity** - A measure of the efficiency of an algorithm based on the amount of space is used in relation to input

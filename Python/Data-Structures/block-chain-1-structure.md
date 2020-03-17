@@ -14,6 +14,28 @@ The most famous, and most valuable, blockchain is called Bitcoun. it was first d
 
 A technical glossary of thers can be found [here](https://bitcoin.org/en/developer-glossary)
 
+### Learn
+Block chains are linked by hash values in order to maintain integrity.
+
+#### The Block
+Each block has the folowing components:
+- Index - The nimber of blocks in the chain. This starts at 0 or 1, depending on the chain.
+- Timestamp - The time at which the block was created. This is not required but is often useful.
+- Transactions - The monetary transactions, or any type of data, that is proofed by the block.
+- Proof - The proof for this block.
+- Previous Hash - The hash of the previous block.
+
+The hash of the previous block is what preserves the integrety. This means that if a bad actor attempts to change a block in the middle of the chain, they must recreate all of the following blocks in the chain. Otherwise, the invalid chain can be identified very easily. 
+
+In the example project, we use the `sha256`. This is used for both creating hashes for blocks as well as proof of work. This algorithm is used because:
+- The outcomes are unpredictable but deterministic.
+- A proposed solution using a specific hash can be quickly and easily varified by hashing that solution and seeing if it passes. 
+
+#### Proof of work 
+Proof of work secures the chain by making it nearly computationaly impossible to cheat, because the cheeter would have to do a freater amount of work than everyone else.
+
+[Proof of work](https://en.wikipedia.org/wiki/Proof_of_work) is an arbitrarily difficult problem to solve. For example, it 
+# HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ## Lecture
 ### Take aways 
 - How blocks are chained together by the hashes of their predecessors

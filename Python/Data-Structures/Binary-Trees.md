@@ -12,7 +12,13 @@ they may have weight and may be mutable
 ### Trees  
 - graph were each vertex has one parent
 - all parts are connected
+  
 #### Binary trees 
 - every vertex has 0 - 2 children
-- values are greater to or equal to the value stored in the left node
+- values are greater to or equal to the value stored in the right branch.
+- values that or less than the parent node are stored in the left branch.
 - Values less than the root node must be stored in the right most sub tree 
+
+**depth first** - Uses a stack. Adds root node to stack and, while the length of the stack is greater than zero, pop the top node, operate on it. Then push it's left and right node onto the stack. 
+
+**breadth first** - Uses a queue. Enqueue the root node. While the length of the que is greater than 0, dequeue the last node in the queue. Operate on it. Then enqueue it's left and right node. 

@@ -29,15 +29,20 @@ The hash of the previous block is what preserves the integrety. This means that 
 
 In the example project, we use the `sha256`. This is used for both creating hashes for blocks as well as proof of work. This algorithm is used because:
 - The outcomes are unpredictable but deterministic.
-- A proposed solution using a specific hash can be quickly and easily varified by hashing that solution and seeing if it passes. 
+- A proposed solution using a specific hash can be quickly and easily verified by hashing that solution and seeing if it passes. 
 
 #### Proof of work 
-Proof of work secures the chain by making it nearly computationaly impossible to cheat, because the cheeter would have to do a freater amount of work than everyone else.
+[Proof of work](https://en.wikipedia.org/wiki/Proof_of_work) is an arbitrarily difficult problem to solve. For example, it would take the average computer 100 years to mine a bitcoin block on it's own
 
-[Proof of work](https://en.wikipedia.org/wiki/Proof_of_work) is an arbitrarily difficult problem to solve. For example, it 
-# HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-## Lecture
-### Take aways 
+Proof of work secures the chain by making it nearly computationally impossible to cheat, because the cheater would have to do a feater amount of work than everyone else.
+
+When a solution is discovered, a block i mined and added to the chain by the node that discovered it, or the first one that was reported - assuming the node finds the solution to be valid. Then the node hashes the previous block and add the rest of the properties, including a timestamp, index, and the list of pending transactions, which are now confirmed. It then shares the new block with the nodes in it's network, which checks the new block to make sure that is has an index one higher than the last block, and a valid solution. If these checks pass, then the new block is added and spreads through the network, bearing in mind that `consensus` is determined by the longest valid chain. 
+
+- Created as a technique to combat spam - see Hashcash
+- An Arbitrarily difficult problem that is solved by spending a large amount of computation time.
+- Work can not be reused - though some systems are vulnerable to this kind of exploit.
+- Solutions are difficult to compute and easy to verify.
+### Take away 
 - How blocks are chained together by the hashes of their predecessors
 - How proof of work makes it nearly impossible for an individual attacker to compromise the chain
 - How to write a program that can mine coins
@@ -62,7 +67,8 @@ The first block is called the `genesis block`
 ```python
 # Turns the object passed in, into a string
 json.dumps({'myObj': myObj}, sort_keys=True) --> "{'myObj': myObj}"
-# The second parameter us used to make sure the dict. is ordered and creates a consistent hash
+# The second parameter us used to make sure the dict. is ordered and creates a 
+# consistent hash
 ```
 
 ## Flask
@@ -70,4 +76,17 @@ json.dumps({'myObj': myObj}, sort_keys=True) --> "{'myObj': myObj}"
 ```py
     # causes the method below to be static
     @staticmethod 
+```
+
+# Notes during project
+
+```python
+string.encode()
+#This method is used to make sure all of the string data in `string` is of a
+#  uniform type. There are many different byte patterns used for chars and this
+#  method will return the string of chars in a uniform type.
+
+# We are using it in our valid_proof method in order to pass the string in 
+# question into the sha256 method. It formats the string data so that it 
+# complies with the hash method.
 ```

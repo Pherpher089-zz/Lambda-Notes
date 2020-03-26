@@ -50,7 +50,7 @@
     [] Redux-Swapi
     [] Redux-Friends
     [] Sprint-Challenge-Redux-Smurfs
-[] Potluck Planner
+[] Potluck Planner `<<<<<< Currently working on `
 
 # Web API Node
 [] Build a Web API
@@ -85,3 +85,7 @@
     [] Data-Structures
     [] Sprint-Challenge--Data-Structures-Python
 [] Build Week 1
+[] Hash-Tables
+    [] Hash-Tables
+    [] Blockchain
+    [X] Sprint-challenge--Hash-BC

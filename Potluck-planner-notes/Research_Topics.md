@@ -115,5 +115,3 @@ class Profile extends React.Component {
   }
 }
 ```
-
-### Query Strings in URLs

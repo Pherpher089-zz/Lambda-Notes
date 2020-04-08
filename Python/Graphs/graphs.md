@@ -46,3 +46,49 @@ A directed acyclic graph (DAG) is a directed graph with no cycles. In other word
 ### Directed Acyclic Graphs (DAGs)
 
 A **directed acyclic graph** (DAG) is a directed graph with no cycles. In other words, we can order a DAG’s vertices linearly in such a way that every edge is directed from earlier to later in the sequence.
+
+## Lecture
+
+### Graphs
+
+_aka: Network_
+
+When a graph has a lot of edges we call it `dense` otherwise we call it
+`sparse`. Naturally, dense graphs require more resources to search.
+
+`Undirected` graph only has two way connections. `Directed` only have one way connections.
+
+`Weighted` graphs have a weight per edge that represents the cost to traverse between the nodes.
+
+`Strongly connected components` appear to be sub graphs connected together.
+
+`Cyclic Graphs` have nodes that loop back around to themselves. In a circle.
+
+### Adjacency List
+
+An object where keys are vertices and the values are all the connected nodes
+
+**Retrieving Data:** O(1)
+**Inserting Node:** O(1)
+
+### Adjacency Matrix
+
+A two dimentional array where each row represents a vert and every element in that row confirms a connection of each other node.
+
+```
+   A B C D E F G
+   _ _ _ _ _ _ _
+A |0 1 0 0 0 0 1
+B |0 0 0 1 0 1 0
+C |1 0 0 1 0 0 0
+D |1 1 1 0 0 0 0
+E |0 1 0 1 0 1 0
+F |0 1 0 1 0 1 0
+G |0 0 0 0 1 1 1
+```
+
+**Space Complexity**: O(V^2)
+
+## Graph Traversal
+
+`Breadth First Traversal` and `Depth First Traversal` are the two main methods of traversing to every separate node.

@@ -1,4 +1,6 @@
-# Training Kit: Graphs
+# Graphs I
+
+## Training Kit:
 
 _aka: Network_
 
@@ -371,3 +373,50 @@ DFS_visit(v):
 
     v.color = black
 ```
+
+# Graphs II
+
+## Lecture
+
+## TK
+
+There are appropriate applications for both breadth first and depth first searching. For instance if your node is at the bottom of the graph, a depth first search is what is needed.
+
+### Applications of a DFS
+
+-   Finding [Minimum Spanning Trees](https://en.wikipedia.org/wiki/Minimum_spanning_tree) of weighted graphs
+-   Path finding
+-   Detection cycles in graphs
+-   [Topological sorting](https://en.wikipedia.org/wiki/Topological_sorting)
+-   Solving and generating mazes
+
+### Coloring Vertexes
+
+# Graphs III
+
+So many things can be represented in a graph
+
+## Earliest Ancestor problem
+
+Here are the three steps to almost all graph problems
+
+1. Describe in terms of graphs
+    1. Nodes: Parents, children
+    2. Edges: if they are parent child
+2. Build our graph
+    1. Build a graph class
+    2. Don't use an adjacency list or matrix, just a `get_neighbors()`
+3. Choose a graph algorithm
+    1. Traversal or search?
+    2. Breadth or depth?
+
+_Note: if passing in a list of tuples, you can use two variables in the for loop definition and use them in logic_
+
+```python
+for i, j in list_of_tuples:
+    print(f"i:{i}, j:{j}")
+```
+
+## Connected components
+
+Groups of connected nodes. There can be several groups of nodes that aren't actually connected to each other in the same graph. These are connected components.

@@ -199,7 +199,7 @@ _Link coming soon_
 
 simply an instagram clone to show off my react skills. Users can log in and comment on the photos in the feed
 
-## Tech used
+### Tech used
 
 -   react.js
 -   Styled components

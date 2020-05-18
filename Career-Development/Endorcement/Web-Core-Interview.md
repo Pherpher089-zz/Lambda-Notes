@@ -26,7 +26,7 @@
 -   Single Page Apps
     -   Use forms to build interactive Component Behavior
 -   Redux
-    -   Use Redux thunks to make stateful API requests with an appropriate spinner UI
+    -   Use Redux thunks to make statefull API requests with an appropriate spinner UI
 -   APIs
     -   Use RESTful HTTP methods PUT & DELETE to modify data on a server
 -   APIs
@@ -39,6 +39,8 @@
     -   Use SQL to create and query a local database, table schemas, configure scripted schema migrations & seed scripts
 
 ## Responsive design concepts
+
+>
 
 _Use CSS preprocessors, mixins and built-in functions to create a modern website_
 
@@ -108,7 +110,7 @@ Responsive Web design is the approach that suggests that design and development 
 Fixed layout - A style that only works for one platform and screen resolution. The units used for size are usually pixels.
 No media queries are used. The only benefit here is faster deployment
 
-Fluid layouts - These expand and contract with the size of the screen. These are cool and all but they can end up acting very wonky and don't always produce the best results. Measurements are usually percentages. No media queries are used.
+Fluid layouts - These expand and contract with the size of the screen. These are cool and all but they can end up acting very wonky and don't always produce the best results. Measurements are usually percent ages. No media queries are used.
 
 Adaptive Layouts - Design is often targeted at phones, tabs, and desktops. Layout width are hard coded per media query.
 
@@ -180,6 +182,8 @@ W3 Schools suggests targeting these 5 widths: 600px, 768px, 992px, and 1200px. T
 Mobile First vs. Desktop first
 W3 school recommends always starting with mobile first design. This means start with designing for a small max width first, ie mobile devices and then design for progressively larger widths. This will make web pages load faster on mobile. Desktop first would be the exact opposite of mobile first.
 
+> Examples: Build-aToz-UI - Index.less
+
 ## Accessibility
 
 _Use HTML tags, CSS selectors, and Flex-box to build a responsive website_
@@ -187,8 +191,6 @@ _Use HTML tags, CSS selectors, and Flex-box to build a responsive website_
 What is accessability? Making web pages and the internet accessible to all people, regardless of how they need to interact with the page.
 
 #### Universal design theory
-
-If you design with the furthest out individual in mind will end up benefiting all individuals who use the product. Ie. installing wheel chair ramps on sidewalks helps people with carts or strollers as well.
 
 One of the most simple yet effective ways to make a web page accessible is to use responsive units.
 
@@ -215,7 +217,7 @@ The third and final building block of a web page. Developed in 1994 to give webs
 -   number - any data consisting of a number or numeric value
 -   string - Data containing letters of the alphabet. Always incased in quotes
 -   bool - Data that is either true or false.
--   null/undefined - These data types represent variables with no lagitemit data. If a variable is declared and not defined, the code will return `undefined`. The computer will return `null` in the same case however, a developer must set the value to `null`, meaning it has no value yet.
+-   null/undefined - These data types represent variables with no legitimate data. If a variable is declared and not defined, the code will return `undefined`. The computer will return `null` in the same case however, a developer must set the value to `null`, meaning it has no value yet.
 
 ## State Management
 
@@ -233,12 +235,9 @@ The core concepts/principals for Redux are:
 
 **Pure functions change our state** - Givin the same input, a pure function will return the same thing every time. All functions(reducers) in Redux must be pure.
 
-**What is a reducer?**
+**What is a reducer?** - A reducer is a function that determines changes to the state. It uses the action it receives to determine this change. Reducers take state and an action and create a new state based on these two parameters.
 
-A reducer is a function that determines changes to the state. It uses the action it receives to determine this change. Reducers take state and an action and create a new state based on these two parameters.
-
-**What is an action?**
-Actions are the only source of information for store. It carries a payload of information from your application to the store. These are plain js objects that have a type attribute.
+**What is an action?** - Actions are the only source of information for the store. It carries a payload of information from your application to the store. These are plain js objects that have a type attribute.
 
 ### Context
 
@@ -252,7 +251,7 @@ Hooks are a way of adding state to functional components. This makes the code mo
 
 In order for a client to gain authentication, it must send the server a correct set of credentials and the server will send back a JWT or `Jason Web Token` That verifies authentication. This token is stored in `localStorage` or `sessionStorage`
 
-A common pattern is for a login endpoint to exist which takes a payload of username and password and responds with a JWT. The server must then pass that token back to the server in the header of ever request from then on, under a key like `Authorization`. This will allow access to protected portions of the server.
+A common pattern is for a login endpoint to exist which takes a payload of username and and responds with a JWT. The server must then pass that token back to the server in the header of ever request from then on, under a key like `Authorization`. This will allow access to protected portions of the server.
 
 Once the client has the token stored, two layers of authentication can be added. The first is mentioned above where the client sends the token in the header of the request. The other is to create a protected route that will only render if the auth token exists. If it does not, it redirects to a public portion of the website.
 
@@ -505,6 +504,8 @@ class Component extends React.Component {
 
 This will take what the user types into the input field and set the state accordingly while at the same time, assigning the value of the input to the state.
 
+> Example: Potluck-Planner Registration.js
+
 #### Client Side Form Validation
 
 Client side validation is the process of insuring that the input is valid and in the correct format before submitting the data to the server. If the user does not enter a valid user name or a username at all, the form validation should prevent it from being sent to the server and alert the user of the mistake.
@@ -539,6 +540,8 @@ We use the HTTP method `PUT` to modify existing data on the db. This requires th
 
 We use the HTTP method `DELETE` to remove data from the database. _note: when using axios, this method requires the id of the record to be deleted to be placed in the URL as a parameter_
 
+> Example: Potluck-Planner actions>index .js
+
 ## Node Express Router
 
 > Use Express' built-in router to build and test a modular server API with Postman
@@ -568,6 +571,7 @@ These string queries are added to the req.query object and do not need to be spe
 **Authentication** is the process by which our Web API verifies the identity of a client that is trying to access a resource. This is different from **authorization**, which comes after authentication and determines what type of access, if any, that a user should have.
 
 -   Encryption goes two ways. First, it utilizes plain text and private keys to generate encrypted passwords and then reverses the process to match to an original password.
+
 -   Cryptographic hashes only go one way: parameters + input = hash. It is pure; given the same parameters and input it generates the same hash.
 
 If the database of users and keys are compromised, it is possible to decrypt the passwords to their original values, and this is bad because users often share passwords across different sites. This is one reason why `cryptographic hashing is the preferred` method for storing user passwords.

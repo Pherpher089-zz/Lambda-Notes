@@ -1,134 +1,28 @@
-# Christopher Allen Tutor: Master CV
-
-**Address**: San Rafael, CA
-
-**Email Address**: Christutor089@gmail.com
-
-[**Linked In**](https://www.linkedin.com/in/christopher-tutor-68a3b796/)
-
-[**GitHub**](https://github.com/Pherpher089)
-
-# Skills
-
-## Web Dev Skills
-
-Languages
-
--   javaScript/Node.js
--   HTML/CSS
--   C++
--   C#
--   python
-
-### Query Languages
-
--   SQL
--   GraphQL
--   Knex
-
-### Frame Works
-
--   React
--   Django
--   Node.js
-
-### React Technologies
-
--   JSX
--   Hooks
--   Context
--   Class components
--   Redux
-
-### State Management
-
--   Redux
--   React - Context API
-
-### HTTP client
-
--   Axios
--   GraphQL
-
-### Server Languages
-
--   Node.js
--   Express
--   Django
--   Flask
-
-### Authentication
-
--   Sessions
--   Cookies
--   JWT
--   Passport.js
-
-### Styling
-
--   Styled Components
--   Less Pre-compiler
--   SCSS
--   Responsive Design
-
-### Database
-
--   Relational
-    -   SQLite
-    -   MySQL
-
-### Version Control
-
--   Git
--   Git Bash
-
-### Backend Testing
-
--   Jest
-
-### CS
-
--   OOP/patters
--   Data structures
-    -   Hash Tables
-    -   Dynamic Arrays
-    -   Linked/Doubly linked lists
-    -   Binary search trees
-    -   Graphs
--   Algorithms
-    -   Recursive and Iterative solutions
-    -   Runtime and space complexity
--   Blockchain Technology
-
-### Game Development
-
--   Unity 3D
--   Game Programming with C#
--   3D Modeling (Maya C4D)
--   Texturing/Materials (PhotoShop)
--   Environment Art/Level Design
--   Animation/Rigging
--   3D/2D Game Programing
--   Physics Game Programming
-
-[Game Dev Portfolio](https://christutor.artstation.com/)
-
 # Experience
 
 ## Verludo
 
-_Jan 2017- Dec 2017_
+_Jan 2017 - Dec 2017_
 
-`So this was a little Indie game dev start-up that friends from school and I startes. We did actually have an LLC. I did all of the programming for the team. There is one project on my portfolio that was made while working for the company and one I have that is not. I can get that one put together for you if you need`
+`Verludo was a small indy startup for which I had the pleasure of being the lead programmer. My self and 4 other developers brought to life a variety of games. Some of these games were a procedurally generated rhythm game, 4 player local multiplayer dodge ball game, and a dual stick action shooter.`
+
+`Rock and Roll RPG was a procedurally generated rhythm game. This project was brought to a prototype which can be seen on my game development portfolio.`
+
+`Ghost ball is an interesting game to describe with just words. This is, by far my favorite project we worked on here at Verludo. Ghost ball is a magical dodge ball game where players can manipulate their ball in mid air.`
+
+## Responsibilities
 
 -   Game programing in Unity with C#
 -   Rapid prototyping/Iterative development principals
 -   Collaborating with a team of 5
 -   Scrum/agile workflow
+-   3D asset creation
+-   Animation logic and control
+-   Hours and hours of research
 
 ## Tatum Games
 
-_Oct 2017- dec 2017_
+_Oct 2017 - dec 2017_
 `The dates on my linked in are not correct, these are.`
 
 -   Documented the pre-existing code base via XML comments
@@ -159,7 +53,7 @@ _Link coming soon_
 
 An app for planning and organizing potlucks. Users can create potlucks with desired food items and invite others to attend. As an attendee, users can confirm or deny attendance as well as claim food items they would like to bring to the potluck.
 
-## Groovin Music
+## Groovn Music
 
 _Link coming soon_
 
@@ -233,23 +127,3 @@ _Link Comming soon_
 _2019-2020_
 
 -   Full-stack web development
-
-## Moorpark College
-
-_2014 - 2017 ~ degree still in progress_
-
--   Game Development
--   Computer Science
--   General Studies
--
-
-## Modesto Jr College
-
-_2011- 2012 ~ degree still in progress_
-
--   Computer Graphics
--   General Studies
-
-# Languages
-
--   English - Native

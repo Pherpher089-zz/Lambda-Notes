@@ -8,6 +8,6 @@
 
 [**Game Dev Portfolio**](https://christutor.artstation.com/)
 
-[**Web Dev Portfolio**](https://app.netlify.com/sites/christopher-tutor-portfolio/overview)
+[**Web Dev Portfolio**](https://www.christopher-tutor.com)
 
 ## Projects

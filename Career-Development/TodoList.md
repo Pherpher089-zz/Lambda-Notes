@@ -1,0 +1,5 @@
+-   [ ] Go over experience for jobs and projects.
+-   [ ] Update Indeed and Linked In
+-   [ ] Review Skills
+-   [ ] Update linked in and Indeed
+-   [ ] List all projects that are not on either portfolio and get them on

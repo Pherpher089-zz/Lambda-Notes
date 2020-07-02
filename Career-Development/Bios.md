@@ -17,3 +17,15 @@ With a strong passion for building amazing things and the skills to build them, 
 ## Git Hub Bio
 
 Hybrid Game Programmer/Full Stack Web Developer. My satisfaction comes from making things work with my Skills in Unity/C# and the W3 Stack.
+
+## Game Dev Portfolio Bio
+
+Lead Programmer, Verludo Games.
+
+Well rounded game developer with a primary focus in gameplay programming and game program architecture.
+
+The majority of my programming experience is in Unity and C# though I can also write in C++, Javascript, and Python and am familiar with OOP and common game programming patterns. My preference is to work in 3D so I have built strong 3D math skills but my true love is creating characters, their controllers the cameras that follow them.
+
+It is worth noting that I am also a 3D artist with the ability to UV, Texture and Material, Rig, and Animate. I worked on these skills early on before I decided programming was what I wanted to specialize in.
+
+I am a part-time student at Moorpark College working my AA in Game Design and then BS in computer science. I plan on taking school slow due to expense as well as granting more time to build my production skills in game development.

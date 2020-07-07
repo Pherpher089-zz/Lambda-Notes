@@ -4,17 +4,17 @@
 
 06/30/20
 
-Start [5:41pm] -- End [6:00pm]
+Start [`5:41pm`] -- End [`6:00pm`]
 
 -   Was unable to come up with a solution using hash maps. I am going to look through the discussions next session.
 
 07/1/20
 
-Start [11:44am] -- End [12:10pm]
+Start [`11:44am`] -- End [`12:10pm`]
 
 -   I gathered two quick hints from the top discussion thread. They were to traverse the string and find all of the possible substrings, Then check if the substrings of the same length match. I am going to try this approach
 
-Start [9:10pm] end [9:54] -> SOLVED
+Start [`9:10pm`] end [`9:54`] -> SOLVED
 
 ```python
 #!/bin/python3
@@ -96,6 +96,20 @@ This was a tricky one. I had to create every single combination of sub strings a
 
 07/01/20
 
-Start [10:02pm] -- End[10:15pm]
+Start [`10:02pm`] -- End [`10:15pm`]
 
 I understand the underlying goal for this algorithm but im seeing inherent issues with my own strategy and have yet to realize what the hashmap will be used for.
+
+`current progress`
+```python
+def countTriplets(arr, r):
+    triplets = []
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            pass
+```
+
+7/06/20
+
+Start [`7:03`] -- End [``]
+

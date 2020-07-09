@@ -111,5 +111,37 @@ def countTriplets(arr, r):
 
 7/06/20
 
-Start [`7:03`] -- End [``]
+Start [`7:03`pm] -- End [`7:52pm`]
 
+```python
+arr_dic = {}
+    triplets = []
+
+    print('here')
+    def helper(triplet):
+        target_value = arr[triplet[len(triplet) - 1]] * r
+        if target_value in arr_dic: 
+            for i in arr_dic[target_value]:
+                new_trip = triplet[:]
+                new_trip.append(i)
+                if len(new_trip) == 3:
+                    triplets.append(new_trip)
+                else:
+                    helper(new_trip)
+        else:
+            return
+    
+    for i, j in enumerate(arr):
+        if j not in arr_dic:
+            arr_dic[j] = [i]
+        else:
+            arr_dic[j].append(i)
+    
+    for i in range(len(arr)):
+        triplet = [i]
+        print(len(triplets))
+        helper(triplet)
+    
+    return len(triplets)
+```
+This solution passed all but four test cases. I don't think this solution is efficent enough. Upon looking through the discussions, I found some very helpful tips. I will attempt new, iterative solution tomorrow. Legend has it, it can be done with O(n), and a hash map is a must.

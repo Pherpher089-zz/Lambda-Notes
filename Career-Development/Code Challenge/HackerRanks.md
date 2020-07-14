@@ -101,6 +101,7 @@ Start [`10:02pm`] -- End [`10:15pm`]
 I understand the underlying goal for this algorithm but im seeing inherent issues with my own strategy and have yet to realize what the hashmap will be used for.
 
 `current progress`
+
 ```python
 def countTriplets(arr, r):
     triplets = []
@@ -120,7 +121,7 @@ arr_dic = {}
     print('here')
     def helper(triplet):
         target_value = arr[triplet[len(triplet) - 1]] * r
-        if target_value in arr_dic: 
+        if target_value in arr_dic:
             for i in arr_dic[target_value]:
                 new_trip = triplet[:]
                 new_trip.append(i)
@@ -130,18 +131,25 @@ arr_dic = {}
                     helper(new_trip)
         else:
             return
-    
+
     for i, j in enumerate(arr):
         if j not in arr_dic:
             arr_dic[j] = [i]
         else:
             arr_dic[j].append(i)
-    
+
     for i in range(len(arr)):
         triplet = [i]
         print(len(triplets))
         helper(triplet)
-    
+
     return len(triplets)
 ```
+
 This solution passed all but four test cases. I don't think this solution is efficent enough. Upon looking through the discussions, I found some very helpful tips. I will attempt new, iterative solution tomorrow. Legend has it, it can be done with O(n), and a hash map is a must.
+
+## [Reverse-integer](https://leetcode.com/problems/reverse-integer/)
+
+7/8/20
+
+Start [`10:18pm`] -- End [``]

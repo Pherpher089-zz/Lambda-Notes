@@ -66,4 +66,19 @@ npm init # This will trigger the initialization
 #### npm init --yes
 This will instantly initalize your project with out any prompts for information. This will be filled with default information.
 
-**note** [npm tricks](https://nodesource.com/blog/eleven-npm-tricks-that-will-knock-your-wombat-socks-off)
+```bash
+npm init --yes # This will trigger automatically populated initialization.
+```
+
+**note** *See* [npm tricks](https://nodesource.com/blog/eleven-npm-tricks-that-will-knock-your-wombat-socks-off)
+
+#### npm install <modual>
+This command installs the module following the command and adds it to the dependencies
+
+```bash
+npm install <module> # installs <module>
+```
+use `i` instead of `install` for shorthand
+```bash
+npm i <module> # i is and alias for install
+```

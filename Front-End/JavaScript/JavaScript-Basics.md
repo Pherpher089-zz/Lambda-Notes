@@ -30,4 +30,4 @@
     //Not allowed
     localScopeConstantVar += 1
  ```
-
+Why would you want to use `let` instead of `var`?

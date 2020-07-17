@@ -152,4 +152,46 @@ This solution passed all but four test cases. I don't think this solution is eff
 
 7/8/20
 
-Start [`10:18pm`] -- End [``]
+Start [`10:18pm`] -- End [`???`]
+
+## [running-sum-of-1d-array](https://leetcode.com/problems/running-sum-of-1d-array/)
+
+7/15/20
+
+Start [`1:39am`] -- End [`1:41am`]
+
+Very simple problem, only took me several minuets
+
+```python
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        sum = 0
+        for i in range(len(nums)):
+            nums[i] += sum
+            sum = nums[i]
+        return nums
+
+```
+
+## [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
+
+7/15/20
+
+Start[`1:43`] -- End[`2:00`]
+
+No problems here
+
+```python
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        good_pairs = 0
+
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if nums[i] == nums[j]:
+                    good_pairs += 1
+
+        return good_pairs
+```
+
+attempted to refactor to lower runtime. Will pick back up in the morning

@@ -1,6 +1,6 @@
 # UI/UX Fundamentals
 
-[9 Tips for UI Beginners](https://www.youtube.com/watch?v=_J1Le-4aXhE)
+# [9 Tips for UI Beginners](https://www.youtube.com/watch?v=_J1Le-4aXhE)
 
 ## 1) Know your fundamentals
 
@@ -26,3 +26,45 @@
 ## 8) Follow tutorials and courses
 
 ## 9) Test your designs.
+
+# [2019 Design Crash Course for Beginners](https://www.youtube.com/watch?v=_Hp_dI0DzY4)
+
+What is UI design?
+
+-   Digital medium that the user interacts with.
+
+UI vs UX?
+
+-   UI is the visual elements of the design
+-   UX the experience as a whole
+
+> "UX is focused on the user's journey to solve a problem, is focused on how a products surfaces look and function"
+
+UI Design vs Front End developer?
+
+-   UI designs the views and front end developer will create those views via W3 stack
+
+## Design Fundamentals
+
+-   Color and Contrast
+-   White space
+-   Visual Hierarchy
+-   Complexity vs Simplicity
+-   Consistency
+-   Scale
+
+### Color and Contrast
+
+Be carful of how colors compete with them selves. Starker contrasts make things more visible. Text needs to be on a contrasting back ground in order for users to be able to red it.
+
+### White space
+
+This is the negative space within your elements. The distance between the edge of the element and the beginning of the text. The alignment, the margin and padding ect.
+
+### Visual Hierarchy
+
+This determines the order in which the users eyes scan the element. The elements must compete for priority using things like type properties, size, position, color, etc...
+
+### Simplicity vs Complexity
+
+The rule of thumb is always to keep it simple stupid. Complexity does have it's place but takes skill to implement it correctly. Streamline and simple will always work well.

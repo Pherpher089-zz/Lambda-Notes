@@ -68,3 +68,15 @@ This determines the order in which the users eyes scan the element. The elements
 ### Simplicity vs Complexity
 
 The rule of thumb is always to keep it simple stupid. Complexity does have it's place but takes skill to implement it correctly. Streamline and simple will always work well.
+
+### Consistency
+
+Things like consistent fonts, text sizes, alignment. Things that are not consistent are not pleasurable to view.
+
+### Design Example Notes
+
+-   It's definitely better not to try to reinvent the wheel. Keep your nav-bar at the top. Users expect this.
+-   Understand the Grid. There is a show grid feature on the Adobe design software that shows the grid. I know this is valuable though I don't understand it fully.
+-   Nav bar buttons can look good without caps. That is another element of contrast and visual hierarchy.
+-   `The Fold` the area below the viewport
+-

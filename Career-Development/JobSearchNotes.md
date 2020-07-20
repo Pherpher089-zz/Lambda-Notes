@@ -26,9 +26,35 @@
 
 [ReadMe, Front End Developer, San Francisco](https://www.linkedin.com/jobs/search/?currentJobId=1947680771&distance=50&f_E=2&geoId=101633971&keywords=developer&location=San%20Rafael%2C%20California%2C%20United%20States)
 
+### 3 Key Skills
+
 -   React
 -   HTML
 -   CSS
 -   Node.js/Backend/Fullstack
 
-[Gramerly, Software Engineer Front End Developer, San Francisco ]()
+[Creative Circle, Web/Email Developer, San Francisco(Remote)](https://www.linkedin.com/jobs/search/?currentJobId=1930363679&f_TPR=r86400&geoId=101633971&keywords=developer&location=94903%2C%20San%20Rafael%2C%20California%2C%20United%20States)
+
+### 3 Key Skills
+
+-   HTML/CSS
+-   JavaScript
+-   Back end Development
+
+[Cyber Coders, Fullstack Web Developer, South San Francisco](https://www.linkedin.com/jobs/search/?currentJobId=1930396069&distance=50&f_TPR=r86400&geoId=101633971&keywords=developer&location=94903%2C%20San%20Rafael%2C%20California%2C%20United%20States)
+
+### Key Skills
+
+-   Git
+-   UX/UI
+-   Rapid prototyping -> Game development
+-   React
+
+### To research
+
+-   Knowledge of Biotech concepts
+
+### Notes on site
+
+-   Andy Prickett - does not have hover over description
+-   Allyson Cronan Shields

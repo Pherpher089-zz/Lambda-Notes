@@ -79,3 +79,4 @@ Things like consistent fonts, text sizes, alignment. Things that are not consist
 -   Understand the Grid. There is a show grid feature on the Adobe design software that shows the grid. I know this is valuable though I don't understand it fully.
 -   Nav bar buttons can look good without caps. That is another element of contrast and visual hierarchy.
 -   `The Fold` the area below the viewport
+-   Spacing is incredibly important

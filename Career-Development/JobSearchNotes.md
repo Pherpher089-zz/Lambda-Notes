@@ -68,3 +68,13 @@ xP
 -   Colaboration
 -   Agile Development
 -   W3 stack
+
+[ABIS Solutions, Front End Developer, San Francisco](https://www.linkedin.com/jobs/view/1955662779/?alternateChannel=search&refId=69113c01-fba0-49ac-b611-2c9a235a5303&trk=flagship3_search_srp_jobs)
+
+### Key Skills
+
+-   React
+-   Node.js
+-   Hard working
+-   Attention to detail
+    [Acuity Brands, JavaScript Engineer, ]

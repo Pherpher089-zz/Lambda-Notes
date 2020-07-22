@@ -77,4 +77,12 @@ xP
 -   Node.js
 -   Hard working
 -   Attention to detail
-    [Acuity Brands, JavaScript Engineer, ]
+
+[Acuity Brands, JavaScript Engineer, Oakland](https://www.linkedin.com/jobs/view/1854765799/?alternateChannel=search&refId=80b625e6-5b85-43da-8736-be476a8c81e9&trk=flagship3_search_srp_jobs)
+
+### Key Skills
+
+-   JavaScript Development
+-   Problem Solver
+-   Beautiful/Elegant software
+-   Strong ablility to work remote efectivly

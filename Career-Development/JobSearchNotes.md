@@ -60,3 +60,11 @@
 -   Allyson Cronan Shields
 
 xP
+[Redolent, Front-End Developer, San Bruno](https://www.linkedin.com/jobs/view/1919938099/?alternateChannel=search&refId=80b625e6-5b85-43da-8736-be476a8c81e9&trk=flagship3_search_srp_jobs)
+
+## Matching Skills
+
+-   Responsive Design
+-   Colaboration
+-   Agile Development
+-   W3 stack

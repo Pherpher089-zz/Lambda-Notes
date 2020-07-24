@@ -146,7 +146,7 @@ arr_dic = {}
     return len(triplets)
 ```
 
-This solution passed all but four test cases. I don't think this solution is efficent enough. Upon looking through the discussions, I found some very helpful tips. I will attempt new, iterative solution tomorrow. Legend has it, it can be done with O(n), and a hash map is a must.
+This solution passed all but four test cases. I don't think this solution is efficient enough. Upon looking through the discussions, I found some very helpful tips. I will attempt new, iterative solution tomorrow. Legend has it, it can be done with O(n), and a hash map is a must.
 
 ## [Reverse-integer](https://leetcode.com/problems/reverse-integer/)
 

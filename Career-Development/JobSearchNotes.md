@@ -86,3 +86,8 @@ xP
 -   Problem Solver
 -   Beautiful/Elegant software
 -   Strong ablility to work remote efectivly
+-   React
+-   Styled Components
+-   Restul/HTTP
+
+XD

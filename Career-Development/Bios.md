@@ -22,7 +22,7 @@ Hybrid Game Programmer/Full Stack Web Developer. My satisfaction comes from maki
 
 Lead Programmer, Verludo Games.
 
-Well rounded game developer with a primary focus in gameplay programming and game program architecture.
+Well rounded game developer with a primary focus in game play programming and game program architecture.
 
 The majority of my programming experience is in Unity and C# though I can also write in C++, Javascript, and Python and am familiar with OOP and common game programming patterns. My preference is to work in 3D so I have built strong 3D math skills but my true love is creating characters, their controllers the cameras that follow them.
 

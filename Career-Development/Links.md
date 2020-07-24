@@ -2,12 +2,12 @@
 
 ## Profiles and Portfolios
 
-[**Linked In**](https://www.linkedin.com/in/christopher-tutor-68a3b796/)
+[**Linked In**](linkedin.com/in/christopher-tutor)
 
-[**GitHub**](https://github.com/Pherpher089)
+[**GitHub**](github.com/Pherpher089)
 
-[**Game Dev Portfolio**](https://christutor.artstation.com/)
+[**Game Dev Portfolio**](christutor.artstation.com/)
 
-[**Web Dev Portfolio**](https://www.christopher-tutor.com)
+[**Web Dev Portfolio**](christopher-tutor.com)
 
 ## Projects

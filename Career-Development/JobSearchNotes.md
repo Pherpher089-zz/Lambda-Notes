@@ -65,7 +65,7 @@ xP
 ## Matching Skills
 
 -   Responsive Design
--   Colaboration
+-   Collaboration
 -   Agile Development
 -   W3 stack
 

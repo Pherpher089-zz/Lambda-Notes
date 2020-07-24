@@ -85,9 +85,7 @@ xP
 -   JavaScript Development
 -   Problem Solver
 -   Beautiful/Elegant software
--   Strong ablility to work remote efectivly
+-   Strong ability to work remote effectively
 -   React
 -   Styled Components
--   Restul/HTTP
-
-XD
+-   Restful/HTTP

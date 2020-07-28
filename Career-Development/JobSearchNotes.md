@@ -89,3 +89,13 @@ xP
 -   React
 -   Styled Components
 -   Restful/HTTP
+
+[Software Developer (Front End Engineering), Bind, OnDemand Health Insurance](https://www.linkedin.com/jobs/view/1872976737/?alternateChannel=search&refId=69113c01-fba0-49ac-b611-2c9a235a5303&trk=flagship3_search_srp_jobs)
+
+### Relatable skills from job posting
+
+-   Scalability
+-   High Performance
+-   W3 Stack
+-   Git
+-   C#

@@ -60,3 +60,20 @@ dvdCollection[2] = lionKingDVD;
 ```
 
 `Java` always initializes data in an array to `null` if the data typ is an object. If it is a primitive data type it is initialized with 0, 0.0, or false.
+
+Reading from an array
+
+```Java
+System.out.println(dvdCollection[7]);
+System.out.println(dvdCollection[10]);
+System.out.println(dvdCollection[3]);
+```
+
+Java `for each` loop syntax with an array:
+
+```Java
+for (int square : squareNumbers) {
+    // Print the current value of square.
+    System.out.println(square);
+}
+```

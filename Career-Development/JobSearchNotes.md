@@ -122,3 +122,11 @@ xP
 -   JSON web token authentication
 -   NPM
 -   Git
+
+[Front End Engineer - React - Roofstock - Oakland](https://www.linkedin.com/jobs/search/?currentJobId=1940177005&distance=50&f_E=2&geoId=101633971&keywords=front%20end%20developer&location=94903%2C%20San%20Rafael%2C%20California%2C%20United%20States&sortBy=DD)
+
+### Matching Skills
+
+-   W3 Stack
+-   React/Redux
+-   Jest

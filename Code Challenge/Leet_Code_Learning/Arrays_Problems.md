@@ -78,3 +78,22 @@ The issue was with the conditions. Before, `highestCount` had no chance to be as
 
 -   1 <= nums.length <= 500
 -   1 <= nums[i] <= 10^5
+
+## My Solutions
+
+> 1st Solution
+
+```Java
+class Solution {
+    public int findNumbers(int[] nums) {
+        int evenCount = 0;
+        for(int i = 0; i<nums.length; i++) {
+            String number = Integer.toString(nums[i]);
+            if(number.length() % 2 == 0){
+                evenCount++;
+            }
+        }
+        return evenCount;
+    }
+}
+```

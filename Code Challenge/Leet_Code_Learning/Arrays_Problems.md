@@ -97,3 +97,42 @@ class Solution {
     }
 }
 ```
+
+# Squares of a Sorted Array
+
+### Description:
+
+Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
+
+Example 1:
+
+    Input: [-4,-1,0,3,10]
+    Output: [0,1,9,16,100]
+
+Example 2:
+
+    Input: [-7,-3,2,3,11]
+    Output: [4,9,9,49,121]
+
+Constraints:
+
+    1 <= A.length <= 10000
+    -10000 <= A[i] <= 10000
+    A is sorted in non-decreasing order.
+
+#### Solution 1:
+
+```Java
+class Solution {
+    public int[] sortedSquares(int[] A) {
+        for(int i = 0; i < A.length; i++) {
+            A[i] = A[i] * A[i];
+            System.out.println(A[i]);
+        }
+        Arrays.sort(A);
+        return A;
+    }
+}
+```
+
+This is totally the brute force method. The over all runtime for this solution is `O(N log N)` and space complexity in this case is `O(1)`. There is a better, two pointer solution.

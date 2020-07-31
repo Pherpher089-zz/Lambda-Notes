@@ -136,3 +136,9 @@ class Solution {
 ```
 
 This is totally the brute force method. The over all runtime for this solution is `O(N log N)` and space complexity in this case is `O(1)`. There is a better, two pointer solution.
+
+#### Solution 2
+
+```Java
+
+```

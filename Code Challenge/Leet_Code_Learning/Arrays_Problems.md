@@ -140,5 +140,41 @@ This is totally the brute force method. The over all runtime for this solution i
 #### Solution 2
 
 ```Java
+class Solution {
+    public int[] sortedSquares(int[] A) {
+    //My two pointer solution
+        int[] output = new int[A.length];
+        int p1 = 0, p2 = 0, counter = 0;
 
+        //Find the pivot between negitive and non-negitive
+        while(p2 < A.length && A[p2] < 0)
+            p2++;
+        p1 = p2 - 1;
+
+        //Assign the array starting from the pivot out
+        while(p1 >= 0 && p2 < A.length) {
+            if(A[p1] * A[p1] > A[p2] * A[p2]) {
+                output[counter++] = A[p2] * A[p2];
+                p2++;
+            } else {
+                output[counter++] = A[p1] * A[p1];
+                p1--;
+            }
+        }
+
+        while(p2 < A.length) {
+            output[counter++] = A[p2] * A[p2];
+            p2++;
+        }
+
+        while(p1 >= 0) {
+            output[counter++] = A[p1] * A[p1];
+            p1--;
+        }
+
+        return output;
+    }
+}
 ```
+
+This solution is quite a bit more tricky. Your looking at two pointers. One for the positive numbers and one for the negative. Which pointed absolute value is lower is squared and added to the output array and it's pointer is moved in it's respective direction. There is a little bit of logic set in to adjust when the pointers are out of range.

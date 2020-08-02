@@ -130,3 +130,41 @@ xP
 -   W3 Stack
 -   React/Redux
 -   Jest
+
+[Front End Engineer - Deliverr - San Francisco](https://www.linkedin.com/jobs/view/1969427122/?alternateChannel=search&refId=d1b989fb-6cde-4cb4-958b-fa289f41fc6f&trk=flagship3_search_srp_jobs)
+
+### Matching Skills
+
+-   React/Redux
+-   Node.js
+-   MySQL
+
+[UI Developer - ReactJS - APN Software Solutions - San Francisco](https://www.linkedin.com/jobs/view/1968780569/?alternateChannel=search&refId=a9cc1962-c728-4eb7-9479-b376f58e1a58&trk=flagship3_search_srp_jobs)
+
+### Matching Skills
+
+-   React
+-   Redux
+-   Responsive Design
+-   Less/Sass
+-   Jest
+-   Node.js
+
+    Thanks & Regards,
+    Imran (Emu) Shikalgar
+    APN Software Services, Inc
+    39899 Balentine Drive, Suite 385, Newark, CA 94560
+    510-402-4704 (Voice & Text)
+    Phone: 510-623-5050 Extn.129 | Fax 510-623-5055 | Imran@apninc.com
+    linkedin.com/in/imranshikalgar
+
+[Jr Web/Front End Developer - BD - San Jose](https://www.linkedin.com/jobs/view/1942425637/?alternateChannel=search&refId=5ffe5225-4e20-4a77-860b-7b50b214204c&trk=flagship3_search_srp_jobs)
+
+### Matching Skills
+
+-   W3 Stack
+-   Jest
+-   Git
+-   JavaScript Tool Chain
+-   Agile/Scrum
+-   React

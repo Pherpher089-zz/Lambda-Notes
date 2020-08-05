@@ -8,3 +8,5 @@ There are two types of casting in Java. Widening Casting and Narrowing Casting.
     `byte` -> `short` -> `char` -> `int` -> `long` -> `float` -> `double`
 -   Narrowing(manually) - converting a bigger type to a smaller size.
     `double` -> `float` -> `long` -> `int` -> `char` -> `short` -> `byte`
+
+//being crafty

@@ -77,3 +77,32 @@ for (int square : squareNumbers) {
     System.out.println(square);
 }
 ```
+
+## Inserting Items into an Array
+
+The three key operations for Arrays:
+
+-   Inserting data into the array
+-   Removing data from the array
+-   Searching for data in the array
+
+An array is a data structure which means that it stores data in a specific format
+and supports certain operations on that data store.
+
+There are three ways to insert data into an array:
+
+-   insert data at the beginning of the array
+-   insert data at the end of the array
+-   insert data at a givin index in the array
+
+#### Inserting data at the end of an array
+
+This is the most simple of the three operations. Because the length is tracked for the array, all we do is add an element to the array at the base address + length + 1. As long as the array has enough pre-defined space for the new element, the time complexity is `O(1)`.
+
+#### Inserting data at the beginning of an array
+
+This is a less efficient operation. In order to insert at the beginning, every other element in the array must be moved forward one index to make space for the new data. This is `O(N)` time complexity.
+
+#### Inserting data at a givin index in an array
+
+This operation is similar to adding data to the beginning of the array. In this case only the elements with the givin index or grater need to be shifted to the right. If you think about it, adding to the beginning of an array is just a special case of inserting at a specific index, if that index was `0`. I believe this is `O(N)` in terms of time complexity.

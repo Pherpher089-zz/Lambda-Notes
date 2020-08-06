@@ -194,5 +194,6 @@ Do the above modifications to the input array **in place**, do not return anythi
 
 **Example 2:**
 **Input:** [1,2,3]
+
 **Output:** null
 **Explanation:** After calling your function, the input array is modified to: [1,2,3]

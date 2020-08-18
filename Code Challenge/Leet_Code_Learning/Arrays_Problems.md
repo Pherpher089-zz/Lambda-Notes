@@ -179,7 +179,7 @@ class Solution {
 
 This solution is quite a bit more tricky. Your looking at two pointers. One for the positive numbers and one for the negative. Which pointed absolute value is lower is squared and added to the output array and it's pointer is moved in it's respective direction. There is a little bit of logic set in to adjust when the pointers are out of range.
 
-# Duplicate Arrays
+# Duplicate Zeros
 
 Given a fixed length array `arr` of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.
 
@@ -197,3 +197,42 @@ Do the above modifications to the input array **in place**, do not return anythi
 
 **Output:** null
 **Explanation:** After calling your function, the input array is modified to: [1,2,3]
+
+```Java
+class Solution {
+    public void duplicateZeros(int[] arr) {
+        
+        int counter = 1; // Used to count spaces based on zero or !zero values
+        int index = 0; // Holds the current index we are searching
+        int tailIndex = arr.length- 1; // Used to track the index we are replacing
+        
+        while(counter < arr.length) {
+            if(arr[index] == 0) {
+                counter += 2;
+            } else {
+                counter++;
+            }
+            index++;
+        }
+        
+        while(tailIndex > 0) {
+            System.out.println(tailIndex + ": " + arr[tailIndex]);
+            System.out.println(index + ": " + arr[index]);
+            System.out.println("");
+            if(arr[index] == 0) {
+                arr[tailIndex] = 0;
+                arr[tailIndex - 1] = 0;
+                tailIndex -= 2;
+                index--;
+            } else {
+                arr[tailIndex] = arr[index];
+                tailIndex--;
+                index--;
+                
+            }
+        }
+    }
+}
+```
+
+First pass solution (does not work). There is an issue if: the counter pointer lands on a zero && there is an odd number of no zero values before the counter

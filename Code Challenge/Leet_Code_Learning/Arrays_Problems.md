@@ -236,3 +236,40 @@ class Solution {
 ```
 
 First pass solution (does not work). There is an issue if: the counter pointer lands on a zero && there is an odd number of no zero values before the counter
+
+`08-20-2020`
+
+So I reviewed the discussion for my solution and It appears that using another array is indeed the correct way to do this. I am assigning the correct values to a new array and reassigning that the current i index to the old array.
+
+```JAVA
+class Solution {
+    public void duplicateZeros(int[] arr) {
+        int pointer = 0;
+        int newArr[] = new int[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(pointer < arr.length){
+                if(arr[i] == 0) {
+                newArr[pointer] = 0;
+                if(pointer+1 < arr.length) {
+                    newArr[pointer + 1] = 0;
+                }
+                pointer += 2;
+                } else { 
+                    newArr[pointer] = arr[i];
+                    pointer++;
+                }
+            }
+            arr[i] = newArr[i]; 
+        }
+    }
+}
+```
+
+
+>   **Runtime:** O(N) - 100% of submissions
+
+
+>   **Space Complexity:** O(N) - 91% of submissions. 
+
+
+>   **Return Goal**: N(1) space complexity

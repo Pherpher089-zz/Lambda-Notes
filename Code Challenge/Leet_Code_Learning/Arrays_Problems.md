@@ -273,3 +273,84 @@ class Solution {
 
 
 >   **Return Goal**: N(1) space complexity
+
+# Merge Sorted Array
+
+### First Pass solution
+
+While this works perfectly at 0ms, it is not the best on space complexity. The issue that the third array addresses is the fact that I don't want to overwrite the first elements before they are copied back into the array. A solution that I seen was to build it backward in descending order. I will try to replicate this solution from my memory. 
+
+```java
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        // Take the elements of nums2 and input them into nums1
+        //INITAL IDEA: Duplicate the first m - n elements of nums 1 and sort them back into Nums1
+        
+        //Create place holder array
+        //assign place holder array
+        //create two pointers for each separate array
+        
+        //loop through nums1
+            //decide between both pointed values
+            //asign value to nums1
+            //incrament the correct pointer
+        int nums3[] = new int[m];
+        int p2 = 0, p3 = 0;
+        for(int i = 0; i < nums3.length; i++) {
+            nums3[i] = nums1[i];
+        }
+        
+        for(int i = 0; i < nums1.length; i++) {
+            if(p2 < nums2.length && p3 < nums3.length){
+                if(nums2[p2] < nums3[p3]) {
+                    nums1[i] = nums2[p2];
+                    p2++;
+                } else {
+                    nums1[i] = nums3[p3];
+                    p3++;
+                }
+            }  else if(p2 < nums2.length) {
+                nums1[i] = nums2[p2];
+                p2++;
+            } else {
+                nums1[i] = nums3[p3];
+                p3++;
+            }
+        }
+        
+    }
+}
+```
+
+> Runtime: O(n) - 0ms - 100%
+
+> Space Complexity: O(n) - 39.7mb - 58%
+
+### Second Pass: Focus on space saving
+This only gets me a few more percent on overall submissions. Much cleaner though. 
+
+```java
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int i = m - 1;
+        int j = n -1;
+        int k = m + n - 1;
+        int a,b;
+        
+        while(i >= 0 || j >= 0) {
+            a = i >= 0 ? nums1[i] : Integer.MIN_VALUE;
+            b = j >= 0 ? nums2[j] : Integer.MIN_VALUE;
+            
+            nums1[k--] = Math.max(a,b);
+            if(a>b){
+                i--;
+            } else {
+                j--;
+            }
+        }
+    }
+}
+```
+> Runtime: O(n) - 0ms - 100%
+> 
+> Space Complexity: O(n) - 39.6mb - 58%

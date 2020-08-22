@@ -1,6 +1,6 @@
 # Arrays 101
 
-## A Array - A DVD box?
+## A. Array - A DVD box?
 
 What is an array?
 
@@ -106,3 +106,5 @@ This is a less efficient operation. In order to insert at the beginning, every o
 #### Inserting data at a givin index in an array
 
 This operation is similar to adding data to the beginning of the array. In this case only the elements with the givin index or grater need to be shifted to the right. If you think about it, adding to the beginning of an array is just a special case of inserting at a specific index, if that index was `0`. I believe this is `O(N)` in terms of time complexity.
+ 
+## Array Deletions

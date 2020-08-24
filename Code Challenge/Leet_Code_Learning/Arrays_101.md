@@ -108,3 +108,26 @@ This is a less efficient operation. In order to insert at the beginning, every o
 This operation is similar to adding data to the beginning of the array. In this case only the elements with the givin index or grater need to be shifted to the right. If you think about it, adding to the beginning of an array is just a special case of inserting at a specific index, if that index was `0`. I believe this is `O(N)` in terms of time complexity.
  
 ## Array Deletions
+Array deletions, like insertions, have 3 cases.
+- Deleting an element at the end of the array.
+- Deleting an element at the beginning of the array.
+- Deleting an element at a givin index
+
+
+### Deleting the last element of an array
+This is the lest time consuming of all three cases. This simply removes the last element and nothing else needs to be done.
+
+### Deleting an element at the beginning of an array
+This is the most time consuming because once the first element is deleted, all of the other elements now need to be shifted to the right to fill the space. Here is an example of how that would look:
+
+```java
+for (int i = 1; i < length; i++) {
+    // Shift each element one position to the left
+    int_array[i - 1] = int_array[i];
+}
+
+length--;
+```
+
+### Deleting an element at a givin index
+This is much like deleting an element at the beginning of an array accept that the process begins at a givin index and the elements before the givin index are preserved. 

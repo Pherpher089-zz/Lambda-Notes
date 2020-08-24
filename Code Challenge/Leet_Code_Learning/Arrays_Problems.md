@@ -353,4 +353,63 @@ class Solution {
 ```
 > Runtime: O(n) - 0ms - 100%
 > 
-> Space Complexity: O(n) - 39.6mb - 58%
+> Space Complexity: O(n) - 39.6mb - 63.89%
+
+# Remove Element
+Given an array nums and a value val, remove all instances of that value in-place and return the new length. Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory. The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+
+### My first solution
+This is an adequate submission. I don't think this is a particularly hard problem to solve but I am totally satisfied with this answer.
+
+```java
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int spacer = 0;
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] == val) {
+                spacer++;
+            } else {
+                nums[i - spacer] = nums[i];
+            }
+        }
+        return nums.length - spacer;
+    }
+}
+```
+The only improvement would be to reduce the space complexity but I've only defined one variable so im like whaaaa?
+
+>   Runtime: 1ms - O(n) - 100%
+
+>  Space Complexity: 39mb - O(n) - %15
+
+# removing duplicates from sorted array
+Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length. Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+
+### First pass solution
+
+Clearly I didn't read the description of this problem well enough, because my solution is supper slow. I used a hash map and this would work for an unsorted array but for a sorted array, this is slow. I will try again tomorrow. 
+
+```java
+import java.util.*;
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        Dictionary<Integer, Integer> dupes = new Hashtable<Integer,Integer>();
+        int counter = 0;
+        
+        for(int i = 0; i < nums.length; i++) {
+            if(dupes.get(nums[i]) != null) {
+                counter++;
+            } else {
+                dupes.put(nums[i], 0);
+                nums[i - counter] = nums[i];
+            }
+        }
+        
+        System.out.println(dupes);
+        return nums.length - counter;
+    }
+}
+```
+> Runtime: 8ms- O(N) -  7.23%
+> Space complexity: O(N) - 40.8mb - 99.15% 

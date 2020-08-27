@@ -130,4 +130,15 @@ length--;
 ```
 
 ### Deleting an element at a givin index
-This is much like deleting an element at the beginning of an array accept that the process begins at a givin index and the elements before the givin index are preserved. 
+This is much like deleting an element at the beginning of an array accept that the process begins at a givin index and the elements before the givin index are preserved.
+
+
+# Searching an Array
+
+```c#
+bool canJump = false;
+int jumpCounter = 0;
+int maxJumpCount = 5; 
+
+if(canJump && rb.velolcity.y >= Mathf.abs())
+```

@@ -134,11 +134,3 @@ This is much like deleting an element at the beginning of an array accept that t
 
 
 # Searching an Array
-
-```c#
-bool canJump = false;
-int jumpCounter = 0;
-int maxJumpCount = 5; 
-
-if(canJump && rb.velolcity.y >= Mathf.abs())
-```

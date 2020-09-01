@@ -134,4 +134,12 @@ This is much like deleting an element at the beginning of an array accept that t
 
 
 # Searching an Array
-asdf
+Searching through an array is the most important operation that is involved in dealing with arrays. It is the speed of the algorithm that helps programmers design their code base. 
+
+Searching means finding a particular element in an array and returning it's position. We may want to search an array to find out if an element exists within, or we may be looking through an array with it's elements arranged in a particular order. 
+
+### Linear Search
+This is searching the array one element after another until you land on the one your looking for. This is the most inefficient way to search an array because it has the potential to search through every index. This is O(N) operation. 
+
+### Binary Search
+This method has us check the middle element of a sorted array and deciding if the target element is on the left or right side of the element in question. This operation is repeated on the sub array containing the target index. This is a O(N log N) operation. 

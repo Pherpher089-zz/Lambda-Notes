@@ -413,3 +413,31 @@ class Solution {
 ```
 > Runtime: 8ms- O(N) -  7.23%
 > Space complexity: O(N) - 40.8mb - 99.15% 
+
+# Check If N and Its Double Exist
+
+Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 * M).
+
+More formally check if there exists two indices i and j such that :
+
+- i != j
+- 0 <= i, j < arr.length
+- arr[i] == 2 * arr[j]
+
+## First pass - No solution
+
+```python3
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        hm = {}
+        for i in range(len(arr)):
+            if arr[i] not in hm:
+                hm[arr[i]] = i
+            if arr[i] * 2 in hm:
+                return True
+            if (arr[i] / 2) % 1 == 0.0:
+                if arr[i]/2 in hm:
+                    return True
+        return False
+```
+

@@ -440,4 +440,4 @@ class Solution:
                     return True
         return False
 ```
-
+This solution is good except for when there are negative numbers in the data. I'm gunna throw a little more logic in here to see if I can get this to work. 

@@ -379,7 +379,6 @@ class Solution {
 The only improvement would be to reduce the space complexity but I've only defined one variable so im like whaaaa?
 
 >   Runtime: 1ms - O(n) - 100%
-
 >  Space Complexity: 39mb - O(n) - %15
 
 # removing duplicates from sorted array
@@ -426,7 +425,7 @@ More formally check if there exists two indices i and j such that :
 
 ## First pass - No solution
 
-```python3
+```python
 class Solution:
     def checkIfExist(self, arr: List[int]) -> bool:
         hm = {}
@@ -441,3 +440,28 @@ class Solution:
         return False
 ```
 This solution is good except for when there are negative numbers in the data. I'm gunna throw a little more logic in here to see if I can get this to work. 
+
+## First Pass - Refined 
+```python
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        hm = {}
+        for i in range(len(arr)):
+            
+            if arr[i] not in hm:
+                hm[arr[i]] = i
+            if arr[i] * 2 in hm and hm[arr[i]*2] != i:
+                return True
+            if (arr[i] / 2) % 1 == 0.0:
+                if arr[i]/2 in hm and hm[arr[i]/2] != i:
+                    return True
+        return False
+```
+The problem was not the negative number, it was the element `0` existing in the array. This threw everything off. I have made a quick check for both if statements to prevent this from happening.
+
+
+>   Runtime: 72ms - O(n) - 44.51%
+
+>  Space Complexity: 13.9mb - O(n) - 44.65%
+
+It appears that this can be done much quicker. I will attempt that tomorrow.

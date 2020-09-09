@@ -465,4 +465,53 @@ The problem was not the negative number, it was the element `0` existing in the 
 >  Space Complexity: 13.9mb - O(n) - 44.65%
 
 It appears that this can be done much quicker. I will attempt that tomorrow.
-asdf
+
+# Valid Mountain Array
+
+
+Given an array A of integers, return true if and only if it is a valid mountain array.
+
+Recall that A is a mountain array if and only if:
+
+- A.length >= 3
+- There exists some i with 0 < i < A.length - 1 such that:
+  - A[0] < A[1] < ... A[i-1] < A[i]
+  - A[i] > A[i+1] > ... > A[A.length - 1]
+
+## First Pass Solution(success)
+
+```Java
+class Solution {
+    public boolean validMountainArray(int[] A) {
+        boolean peak = false;
+        for(int i =0; i < A.length - 1; i++) {
+            if(A[i] == A[i+1]) {
+                return false;
+            }
+            
+            if(A[i] < A[i+1] && peak){
+                return false;
+            } 
+            
+            if(A[i] > A[i+1] && !peak) {
+                if(i > 0){
+                    peak = true;    
+                } else {
+                    return false;
+                }
+                
+            }
+        }
+        if(!peak) {
+            return false;
+        }
+        return true;
+    }
+}
+```
+This is O(N) and uses a little memory but it was clean and quick. Will investigate better solutions for my information.
+
+> Runtime 2ms 55.32% 
+> Space 39.9 MB 97.72%
+
+Not hating these results.

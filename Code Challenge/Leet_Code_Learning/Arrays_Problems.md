@@ -515,3 +515,16 @@ This is O(N) and uses a little memory but it was clean and quick. Will investiga
 > Space 39.9 MB 97.72%
 
 Not hating these results.
+
+
+# Replace Elements with Greatest Element on Right Side
+Given an array arr, replace every element in that array with the greatest element among the elements to its right, and replace the last element with -1.
+
+## Fist Pass Solution(accepted)
+```java
+```
+
+>   Runtime: 2ms 46.72% of submitions
+> Space: 40MB 78.80% of submitions
+
+Not supper disappointed with how quickly I came up with this solution. It's kinda a dynamic programming approach. 

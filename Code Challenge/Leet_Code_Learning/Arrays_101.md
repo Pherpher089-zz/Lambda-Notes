@@ -143,3 +143,5 @@ This is searching the array one element after another until you land on the one 
 
 ### Binary Search
 This method has us check the middle element of a sorted array and deciding if the target element is on the left or right side of the element in question. This operation is repeated on the sub array containing the target index. This is a O(N log N) operation. 
+
+## In Place Opperations

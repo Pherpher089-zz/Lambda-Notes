@@ -562,3 +562,30 @@ class Solution {
 > Space: 40MB 78.80% of submitions
 
 Not supper disappointed with how quickly I came up with this solution. It's kinda a dynamic programming approach. 
+
+# Move Zeroes
+
+Solution(Unaccepted)
+```java
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int zeros = 0;
+        for(int i = 0; i < nums.length; i++) {
+            //System.out.println("zeros = " + zeros);
+            //System.out.println("i = " + i);
+            //System.out.println("nums[i-zeros] = " + nums[i-zeros]);
+            //System.out.println("nums[i] = " + nums[i]);
+            if(nums[i] == 0){
+                zeros++;
+            } else {
+                nums[i-zeros] = nums[i];
+                if(i >= nums.length - zeros) {
+                    nums[i] = 0;  
+                }
+            }
+            //System.out.println(Arrays.toString(nums));
+            //System.out.println('\n');
+        }
+    }
+}
+```

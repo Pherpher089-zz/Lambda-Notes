@@ -522,6 +522,40 @@ Given an array arr, replace every element in that array with the greatest elemen
 
 ## Fist Pass Solution(accepted)
 ```java
+class Solution {
+    
+    public int greatestValueIndex(int[] arr, int start) {
+        //System.out.println("Finding greatest value index starting at " + start);
+        int target = start;
+        for(int i = start; i < arr.length; i++) {
+            if(arr[i] > arr[target]) {
+                target = i;
+            }
+        }
+        //System.out.println("target found = " + target);
+        return target;
+    }
+    
+    public int[] replaceElements(int[] arr) {
+        int j = greatestValueIndex(arr, 0);
+        
+        for(int i = 0; i < arr.length; i++) {
+            if(i == arr.length - 1) {
+                arr[i] = -1;
+                break;
+            }
+            
+            if(i >= j) {
+                j = greatestValueIndex(arr, i+1);
+            }
+            //System.out.println("index " + i + " is now " + arr[j]);
+            arr[i] = arr[j];
+        }
+        
+        return arr;
+    }
+    
+}
 ```
 
 >   Runtime: 2ms 46.72% of submitions

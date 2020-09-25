@@ -564,8 +564,10 @@ class Solution {
 Not supper disappointed with how quickly I came up with this solution. It's kinda a dynamic programming approach. 
 
 # Move Zeroes
+Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
-Solution(Unaccepted)
+
+## First pass Solution(Unaccepted)
 ```java
 class Solution {
     public void moveZeroes(int[] nums) {
@@ -586,6 +588,70 @@ class Solution {
             //System.out.println(Arrays.toString(nums));
             //System.out.println('\n');
         }
+    }
+}
+```
+This may take a backward approach to filling it in. So far the issue is that if there are zeros past the `nums.length - zeros` index, they are not accounted for and there for not written. We will try again tomorrow. 
+
+## Second pass solution(accepted)
+
+```java
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int zeros = 0;
+        for(int i = 0; i < nums.length + zeros; i++) {
+            //System.out.println("zeros = " + zeros);
+            //System.out.println("i = " + i);
+            //System.out.println("nums[i-zeros] = " + nums[i-zeros]);
+            //System.out.println("nums[i] = " + nums[i]);
+            if(i < nums.length) {
+                if(nums[i] == 0){
+                    zeros++;
+                } else {
+                    nums[i-zeros] = nums[i];
+                    if(i >= nums.length - zeros) {
+                        nums[i] = 0;  
+                    }
+                }
+            } else {
+                System.out.println(nums.length - (nums.length + zeros - i));
+                nums[nums.length - (nums.length + zeros - i)] = 0;
+            }
+            //System.out.println(Arrays.toString(nums));
+            //System.out.println('\n');
+        }
+    }
+}
+```
+
+>   Runtime: 5ms 09.95% of submissions
+>   Space: 40MB 39.98% of submissions
+
+This solution is a tad bit more than O(N). The runtime is very bad. I peeked at the quicker solution and will give that a try.
+
+>   Hint Hint !!! I will atempt to rewrite this solution
+
+```java
+    public void moveZeroes(int[] nums) {
+        //[0,1,0,3,12] --> [1,0,0,3,12] --> 1,3,0,0,12 -->   [1,3,12,0,0]
+        //101 --110
+        int wp=0;
+        int temp=0;
+        
+        for (int rp=0 ; rp < nums.length-1 ; rp++){
+            
+            if (nums[rp]==0 && nums[rp+1] !=0 ){
+                temp = nums[rp+1];
+                nums[rp+1] =nums[rp]  ;
+                nums[wp]=temp;
+                wp++;
+            }
+            else if (nums[rp+1]==0 && nums[rp] !=0 ){
+                 wp++;
+            }
+            else if (nums[rp+1] !=0 && nums[rp] !=0 )
+                wp++;
+        }        
     }
 }
 ```

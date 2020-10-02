@@ -655,3 +655,5 @@ This solution is a tad bit more than O(N). The runtime is very bad. I peeked at 
     }
 }
 ```
+
+Well I wrote this solution exactly. So yea it worked. I need to try to understand how the code works and then attempt to use the method as I understand it. This method of peeking back and fourth will not work. I will move on. Tricky problem though. 

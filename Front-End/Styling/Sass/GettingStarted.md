@@ -37,6 +37,12 @@ div
 ## Partials and imports
 A partial is a separate sass file that that is a part of the main sass file. These files are all named starting with an underscore. These files can be tied or imported to the main sass file with an import statement. The rules of specificity sill apply so its good to remember that the import is just like that file and all its code appearing on the line it was imported on.
 
+e.g. 
+`_variables.sass`
+```sass
+@import variables
+```
+
 ## Selector Inheritance and Operators 
 Selector inheritance is similar to using mixins. The key difference is that there are no parameters with inherited selectors. They work like this:
 
@@ -52,3 +58,4 @@ Selector inheritance is similar to using mixins. The key difference is that ther
 .OtherClass
     @extend %newSelector
 ```
+

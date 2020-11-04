@@ -625,11 +625,12 @@ class Solution {
 ```
 
 >   Runtime: 5ms 09.95% of submissions
+
 >   Space: 40MB 39.98% of submissions
 
 This solution is a tad bit more than O(N). The runtime is very bad. I peeked at the quicker solution and will give that a try.
 
->   Hint Hint !!! I will atempt to rewrite this solution
+>   Hint Hint !!! I will attempt to rewrite this solution
 
 ```java
     public void moveZeroes(int[] nums) {
@@ -657,3 +658,30 @@ This solution is a tad bit more than O(N). The runtime is very bad. I peeked at 
 ```
 
 Well I wrote this solution exactly. So yea it worked. I need to try to understand how the code works and then attempt to use the method as I understand it. This method of peeking back and fourth will not work. I will move on. Tricky problem though. 
+
+# Sort Array by Parity
+Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.
+
+## First Pass Solution
+```Java
+class Solution {
+    public int[] sortArrayByParity(int[] A) {
+        int [] answer = new int[A.length];
+        int l = 0, r = A.length - 1;
+        for(int i = 0; i < A.length; i++){
+            if (A[i]%2 == 0){
+                answer[l] = A[i];
+                l++;
+            } else {
+                answer[r] = A[i];
+                r--;
+            }
+        }
+        return answer;
+    }
+}
+```
+
+>   Runtime: 1ms 99.14% of submissions
+
+>   Space: 40MB 39.98% of submissions

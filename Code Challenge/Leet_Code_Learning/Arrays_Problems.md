@@ -684,4 +684,16 @@ class Solution {
 
 >   Runtime: 1ms 99.14% of submissions
 
->   Space: 40MB 39.98% of submissions
+>   Space: 39.6MB unknown % of submissions
+
+This was a good try. Took me literally several seconds to solve. I'm Proud. The only better solution utilizes the AND bitwise operator to decide if the number in question is even. Apparently `if((x & 1) == 0)` your number is even. This solution also uses a double pointer technique for swapping with one pointer being incremented every iteration and the other only durring a swap. I don't quite understand the logic but it's constant time and uses no additional space. There are no variables declared out side of the loop. 
+
+# Squares of a sorted array
+
+Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
+
+## First pass solution
+
+>   Runtime: 2ms 64.78% of submissions
+
+>   Space: 41.2MB unknown % of submissions

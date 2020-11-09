@@ -693,7 +693,20 @@ This was a good try. Took me literally several seconds to solve. I'm Proud. The 
 Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
 
 ## First pass solution
+```Java
+class Solution {
+    public int[] sortedSquares(int[] A) {
+        for(int i = 0; i< A.length; i++) {
+            A[i] = A[i] * A[i];
+        }
+        Arrays.sort(A);
+        return A;
+    }
+}
+```
 
 >   Runtime: 2ms 64.78% of submissions
 
 >   Space: 41.2MB unknown % of submissions
+
+I have to admit, this was a lazy solution but I am tired. Im going to bed.

@@ -150,3 +150,8 @@ This is modifying the data in the array without creating any additional variable
 ## A Better Repeated Deletion Algorithm
 The objective is to remove all duplicate values from the array. This has to be done in place and in O(n) time. Previously this may have been done with a nested loop but this requires only one iteration.
 
+# Double Pointer Solution
+This is a solution using two pointers for access to two elements on the same step of iteration. These can be moving in the `same direction`, `opposite directions` or a `fixed with`.
+
+# Circular array
+This one seems to be a bit of a cliff hanger. No notes left here. More on this later.

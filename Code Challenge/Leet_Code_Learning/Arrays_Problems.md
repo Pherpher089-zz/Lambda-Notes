@@ -711,4 +711,40 @@ class Solution {
 
 I have to admit, this was a lazy solution but I am tired. Im going to bed.
 
-#
+# Height Checker
+Students are asked to stand in non-decreasing order of heights for an annual photo. Return the minimum number of students that must move in order for all students to be standing in non-decreasing order of height.
+    
+>   Notice that when a group of students is selected they can reorder in any possible way between themselves and the non selected students remain on their seats.
+
+
+## First Pass Solution
+```Java
+```
+>   Runtime: `1 ms`
+
+>   Memory Usage: `36.7 MB`
+## LeetCode's Better Solution
+```Java
+class Solution {
+    public int heightChecker(int[] heights) {
+     int[] similarheights=new int[101];
+        for(int h:heights)
+        {
+            similarheights[h]++;
+        }
+        int move=0;
+        for(int spot=1,j=0;spot<101&&j<heights.length;spot++)
+        {
+            while(similarheights[spot]>0)
+            {
+                if(spot!=heights[j])
+                {
+                    move++;
+                }
+                j++;similarheights[spot]--;
+            }
+        }
+        return move;
+    }
+}
+```

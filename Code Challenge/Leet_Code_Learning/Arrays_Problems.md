@@ -719,10 +719,29 @@ Students are asked to stand in non-decreasing order of heights for an annual pho
 
 ## First Pass Solution
 ```Java
+class Solution {
+    public int heightChecker(int[] heights) {
+        // we need to rank each element. If the element has an index of its rank, it is subtracted from the length, we return the rank. 
+        int[] sortedArr = new int[heights.length];
+        for(int i = 0; i < sortedArr.length; i++) {
+            sortedArr[i] = heights[i];
+        }
+        Arrays.sort(sortedArr);
+        int numSorts = heights.length;
+        for(int i = 0; i < sortedArr.length; i++) {
+            if(sortedArr[i] == heights[i]) {
+                numSorts--;
+            }
+        }
+        return numSorts;
+    }
+}
 ```
 >   Runtime: `1 ms`
 
 >   Memory Usage: `36.7 MB`
+
+Im pretty satisfied with this solution. I am bummed that there is a better solution and even more bummed that I don't understand it.  I will have to conquer this on my next pass through this section.
 ## LeetCode's Better Solution
 ```Java
 class Solution {
@@ -748,3 +767,5 @@ class Solution {
     }
 }
 ```
+
+Making a contribution XP

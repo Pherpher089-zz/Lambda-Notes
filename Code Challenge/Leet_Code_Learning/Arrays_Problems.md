@@ -767,3 +767,53 @@ class Solution {
     }
 }
 ```
+
+# Third Maximum Number
+
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
+
+## First Pass (incomplete)
+```java
+import java.util.*;
+
+class Solution {
+    public int thirdMax(int[] nums) {
+        Hashtable hm = new Hashtable();
+        int m3, m2, m1;
+        if (nums[i] < 3) {
+            return Math.max(nums[0], nums[1]);
+        }
+        
+        for(int i = 0; i < nums.length; i++) {
+            //This will prevent the dupes from being consitered.
+            //This may be a falable technique
+            if(hm.get(nums[i]) == null) {
+                hm.put(nums[i], i);
+            } else {
+                continue;       
+            }
+            if(i == 0) {
+                m1 = nums[i];
+            } else {
+                if(nums[i] > m1) {
+                    m3 = m2;
+                    m2 = m1;
+                    m1 = nums[i];
+                } else if(m2 == undefined || nums[i] > m2) {
+                    m3 = m2;
+                    m2 = nums[i];
+                } else if(m3 == null || nums[i] > m3) {
+                    m3 = nums[i];
+                }
+            }
+            
+            if(m3 == null) {
+                return m1;
+            } else {
+                return m3;
+            }
+        }
+    }
+}
+```
+Yo this one is really hard. This one is going to take more than one session to solve. If I don't get it by tomorrow night, I will study the answers. 

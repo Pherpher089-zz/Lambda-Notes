@@ -817,3 +817,42 @@ class Solution {
 }
 ```
 Yo this one is really hard. This one is going to take more than one session to solve. If I don't get it by tomorrow night, I will study the answers. 
+
+## Second Pass Solution
+```python
+import math
+
+class Solution(object):
+    def thirdMax(self, nums):
+
+        max1 = nums[0]
+        max2 = None
+        max3 = None
+        hm = {}
+        
+        for i in range(1, len(nums)):
+            print(nums[i])
+            if nums[i] in hm:
+                continue
+            else:
+                hm[nums[i]] = i
+                
+            if nums[i] > max1:
+                max3 = max2
+                max2 = max1
+                max1 = nums[i]
+            elif nums[i] > max2 or max2 == None:
+                max3 = max2
+                max2 = nums[i]
+            elif nums[i] > max3 or max3 == None:
+                max3 = nums[i]
+        if max3 == None:
+            return max1
+        else:
+            return max3
+```
+
+converting back to python yo. I was just using java to get out of my shell and practice a language I don't know but I'm realizing that all of the code tests that I will be taking are going to be in Python or JS so it's time to dust off the old PY
+
+any way this solution does not work. I looked up the solution via YouTube and got the first step. Trying to solve it from here.
+

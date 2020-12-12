@@ -7,3 +7,4 @@ All my notes in markdown
 - Java
 - Potluck Planner Notes
 - User Interface
+- Sticky Shop Notes

@@ -1,6 +1,8 @@
 # Lambda-Notes
 All my notes in markdown
 - CS
+ - Algorithms
+ - Block Chains and Heaps
 - Career Develoment
 - Code Challenges
 - Front End
